@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Formulario</title>
+  </head>
+  <body>
+    <h1>Formulario de Registro</h1>
+    <form method="post" action="www.google.com">
+      <label for="Nombre">Nombre: *<input id="Nombre" name="Nombre" type="text" required/></label>
+      <label for="Apellido">Apellido: *<input id="Apellido" name="Apellido" type="text" required/></label>
+      <label for="Email">Email: *<input id="Email" name="Email" type="email" required/></label>
+      <label for="Contrasenha">Contraseña: *<input id="Contrasenha" name="Contrasenha" type="password" required/></label>
+      <label for="Confirmar_Contrasenha">Confirmar contraseña: *<input id="Confirmar_Contrasenha" name="Confirmar_Contrasenha" type="password" required/></label>
+      <label for="Cumpleanhos">Cumpleaños: *<input id="Cumpleanhos" name="Cumpleanhos" type="date" required/></label>
+      <fieldset>
+        <strong>Identidad de Género</strong>
+        <label for="Hombre">Hombre <input id="Hombre" name="Genero" type="radio"/> </label>
+        <label for="Mujer">Mujer <input id="Mujer" name="Genero" type="radio"/> </label>
+        <label for="No_Binario">No Binario <input id="No_Binario" name="Genero" type="radio"/> </label>
+        <label for="No_responder">Prefiero no responder <input id="No_responder" name="Genero" type="radio"/> </label>
+      </fieldset>
+      <label for="Descripcion">Una breve descripción acerca de mí<br><textarea id="Descripcion" name="Descripcion" rows="3" cols="30" placeholder="Escribe algo inspirador"></textarea></label>
+      <label for="Lenguaje_Favorito">Lenguaje favorito:
+        <select id="Lenguaje_Favorito" name="Lenguaje_Favorito">
+            <option value="">Seleccionar una opción</option>
+            <option value="1">Pascal</option>
+            <option value="2">Ensamblador</option>
+            <option value="3">Fortran</option>
+            <option value="4">COBOL</option>
+        </select>
+        <label for="Spam" name="Spam">
+            <input id="Spam" type="checkbox" required/> Si, me ENCANTARÍA recibir SPAM
+          </label>
+          <input type="Submit" value="Crear Cuenta" />
+          <p>* Indica un campo requerido</p>
+      </label>
+
+
+
+      
+
+      
+    </form>
+  </body>
+</html>
